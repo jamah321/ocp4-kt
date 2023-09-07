@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ocp4-kt-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: ocp4-kt
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: apps/ocp4-kt/overlays/ocp4-kt 
+    repoURL: https://github.com/jamah321/ocp4-kt 
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

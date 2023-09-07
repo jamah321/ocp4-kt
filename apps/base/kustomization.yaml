@@ -1,0 +1,5 @@
+namespace: ocp4-kt
+resources:
+- ocp4-kt-svc.yaml
+- ocp4-kt-deployment.yaml
+- ocp4-kt-route.yaml
