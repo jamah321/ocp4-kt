@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/ocp4-kt/overlays/ocp4-kt
+    path: apps/overlays/ocp4-kt
     repoURL: https://github.com/jamah321/ocp4-kt
     targetRevision: main
   syncPolicy:
