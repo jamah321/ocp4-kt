@@ -5,3 +5,4 @@ bases:
 
 resources:
 - ocp4-kt-ns.yaml
+- ocp4-kt-sa.yaml
