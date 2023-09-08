@@ -6,6 +6,7 @@ metadata:
   name: ocp4-kt
   namespace: ocp4-kt
 spec:
+  path: /ocp4-kt/
   port:
     targetPort: 8080
   to:
