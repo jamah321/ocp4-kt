@@ -6,3 +6,5 @@ bases:
 resources:
 - ocp4-kt-ns.yaml
 - ocp4-kt-sa.yaml
+- ocp4-kt-scc-anyuid.yaml
+- ocp4-kt-anyuid-rbac.yaml

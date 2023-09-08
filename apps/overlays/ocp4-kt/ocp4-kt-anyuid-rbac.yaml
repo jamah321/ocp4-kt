@@ -1,0 +1,12 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: ocp4-kt-sa-to-anyuid
+  namespace: ocp4-kt
+subjects:
+  - kind: ServiceAccount
+    name: ocp4-kt-sa
+roleRef:
+  kind: Role
+  name: ocp4-kt-anyuid
+  apiGroup: rbac.authorization.k8s.io
