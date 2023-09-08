@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ocp4-kt-app
+  name: ocp4-kt
   namespace: openshift-gitops
 spec:
   destination:
@@ -11,8 +11,10 @@ spec:
   source:
     path: apps/overlays/ocp4-kt
     repoURL: https://github.com/jamah321/ocp4-kt
-    targetRevision: main
+    targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+    - Replace=true
